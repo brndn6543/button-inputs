@@ -8,21 +8,23 @@ byte leds = 0;
 
 // Function to control on/off switching.
 void switchOnOff(int onBtn, int offBtn, int light) {
-   if (digitalRead(onBtn) == LOW) {       // If the light is off...
-      digitalWrite(light, HIGH);  // turn it on.
+   // LED comes on.
+   if (digitalRead(onBtn) == LOW) {
+      digitalWrite(light, HIGH);
    }
 
-   if (digitalRead(offBtn) == LOW) {      // Off button is always low / off...
-      digitalWrite(light, LOW);   // turn the light off.
+   // LED goes off.
+   if (digitalRead(offBtn) == LOW) {
+      digitalWrite(light, LOW);
    }
 }
 
 void setup() {
+   // Put 5 V on it (LED on).
    pinMode(ledPin, OUTPUT);
 
-   // INPUT_PULLUP makes the pin to be used an input.
-   // The default value for the input is HIGH, unless
-   // it is pulled LOW by pressing the button.
+   // Pin is HIGH whenever the button is not pressed.
+   // When the button is pressed, the pin is shorted to GND, reading LOW.
    pinMode(buttonApin, INPUT_PULLUP);
    pinMode(buttonBpin, INPUT_PULLUP);
 }
