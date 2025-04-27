@@ -6,6 +6,17 @@ int buttonBpin = 8;
 
 byte leds = 0;
 
+// Function to control on/off switching.
+void switchOnOff(int onBtn, int offBtn, int light) {
+   if (digitalRead(onBtn) == LOW) {       // If the light is off...
+      digitalWrite(light, HIGH);  // turn it on.
+   }
+
+   if (digitalRead(offBtn) == LOW) {      // Off button is always low / off...
+      digitalWrite(light, LOW);  // turn the light off.
+   }
+}
+
 void setup() {
    pinMode(ledPin, OUTPUT);
 
@@ -17,12 +28,5 @@ void setup() {
 }
 
 void loop() {
-   // Two if statements--one for each button.
-   if (digitalRead(buttonApin) == LOW) {
-      digitalWrite(ledPin, HIGH);
-   }
-
-   if (digitalRead(buttonBpin) == LOW) {
-      digitalWrite(ledPin, LOW);
-   }
+   switchOnOff(buttonApin, buttonBpin, ledPin);
 }
