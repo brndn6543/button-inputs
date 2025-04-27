@@ -13,7 +13,7 @@ void switchOnOff(int onBtn, int offBtn, int light) {
    }
 
    if (digitalRead(offBtn) == LOW) {      // Off button is always low / off...
-      digitalWrite(light, LOW);  // turn the light off.
+      digitalWrite(light, LOW);   // turn the light off.
    }
 }
 
