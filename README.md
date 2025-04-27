@@ -1,5 +1,7 @@
 # button-inputs
-A demonstration of push-button functionality using an Arduino UNO. The left button turns the LED on and the right button turns the LED off. Watch the demo below on YouTube.
+A demonstration of push-button functionality using an Arduino UNO. The left button turns the LED on and the right button turns the LED off.
+
+**Watch the demo below on YouTube.**
 
 [![Watch on YouTube](https://i9.ytimg.com/vi/p0Tl_G_UiXk/mq2.jpg?sqp=CMjcucAG-oaymwEmCMACELQB8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGHIgRSg0MA8=&rs=AOn4CLBro4METR1r5mHhfLRGUZMy3DXeBw)](https://youtu.be/p0Tl_G_UiXk)
 
