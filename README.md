@@ -3,7 +3,7 @@ A demonstration of push-button functionality using an Arduino UNO. The left butt
 
 **Watch the demo below on YouTube.**
 
-[![Watch on YouTube](https://i9.ytimg.com/vi/p0Tl_G_UiXk/mqdefault.jpg?sqp=CLDDxMAG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgRig1MA8=&rs=AOn4CLD0RylzStlw4MbwPENFJJ47zmKhXw)](https://youtu.be/p0Tl_G_UiXk)
+[![Watch on YouTube](https://i.postimg.cc/y6XfbvYp/button-led.jpg)](https://youtu.be/p0Tl_G_UiXk)
 
 `pinMode(ledPin, OUPUT);`
 
